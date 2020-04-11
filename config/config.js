@@ -5,5 +5,5 @@ process.env.BCRYPT_ROUNDS = 10;
 if(process.env.NODE_ENV === 'dev') { 
     process.env.URL_DB = process.env.URL_DB || 'mongodb://localhost:27017/coffee';
 } else {
-    process.env.URL_DB = process.env.URL_DB || 'mongodb+srv://dcortes:Skateboard87@cluster0-a0qyw.mongodb.net/coffee?retryWrites=true&w=majority';
+    process.env.URL_DB = process.env.MONGO_DB_URL;
 }
